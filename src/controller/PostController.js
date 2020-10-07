@@ -28,8 +28,16 @@ const newPost = (request, response) => {
     response.status(201).json(newPost);
 }
 
+const deletePost = (request, response) => {
+    let { id } = request.params;
+    postModel.filter(post => post.id != id);
+
+    response.json({message: "Post deletado com sucesso."})
+}
+
 module.exports = {
     getAll,
     getById,
-    newPost
+    newPost,
+    deletePost
 }
