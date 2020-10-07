@@ -9,6 +9,7 @@
   "author": "Antonia Luciana Pires",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helper": "0.0.13"
   }
 }
