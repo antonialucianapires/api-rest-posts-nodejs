@@ -1,4 +1,3 @@
-const { request, response } = require("express");
 const postModel = require("../models/PostModel");
 const helper = require("../helpers/helper")
 
